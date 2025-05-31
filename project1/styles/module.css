@@ -1,0 +1,10 @@
+/* Стиль для кнопки модуля */
+#controls .control-tool.myModule {
+    color: #ff5722;
+}
+
+/* Стиль всплывающего окна */
+.dialog.my-module-popup {
+    background: #f0f0f0;
+    padding: 10px;
+}

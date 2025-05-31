@@ -1,0 +1,16 @@
+{
+  "name": "my-simple-module",
+  "title": "My Simple Module",
+  "description": "Пример простого модуля для Foundry VTT",
+  "version": "1.0.0",
+  "author": "Ваше имя",
+  "scripts": [ "scripts/main.js" ],
+  "styles": [ "styles/module.css" ],
+  "esmodules": [],
+  "packs": [],
+  "url": "https://github.com/ваш-репозиторий",
+  "manifest": "https://raw.githubusercontent.com/ваш-репозиторий/main/module.json",
+  "download": "https://github.com/ваш-репозиторий/archive/main.zip",
+  "minimumCoreVersion": "0.8.6",
+  "compatibleCoreVersion": "9"
+}
