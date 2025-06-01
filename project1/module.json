@@ -4,13 +4,13 @@
   "description": "Example module",
   "version": "1.0.0",
   "author": "kos3434",
-  "scripts": [ "project1/scripts/main.js" ], // Путь от корня репозитория!
-  "styles": [ "project1/styles/module.css" ], // Путь от корня!
-  "esmodules": [], // Корректное поле (если не используется)
-  "packs": [], // Корректное поле (если нет compendium)
+  "scripts": [ "project1/scripts/main.js" ],
+  "styles": [ "project1/styles/module.css" ],
+  "esmodules": [],
+  "packs": [],
   "url": "https://github.com/kos3434/test",
-  "manifest": "https://raw.githubusercontent.com/kos3434/test/master/project1/module.json", // RAW-ссылка на файл в папке!
-  "download": "https://github.com/kos3434/test/archive/master.zip", // .zip, а не .xls
+  "manifest": "https://raw.githubusercontent.com/kos3434/test/master/project1/module.json",
+  "download": "https://github.com/kos3434/test/archive/master.zip",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9"
 }
