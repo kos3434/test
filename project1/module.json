@@ -1,18 +1,16 @@
 {
   "name": "my-module",
-  "title": "MGM waqyna",
-  "description": "Omcsame waqyna",
+  "title": "My Module",
+  "description": "Example module",
   "version": "1.0.0",
   "author": "kos3434",
-  "scripts": [ "scripts/main.js" ],
-  "  // Лишняя кавычка!: null,
-  "style": [ "styles/module.css" ],
-  "  // Опечатка: должно быть " "styles\" (с 's')",
-  "easonclass": [], // Несуществующее поле
-  "noES": [], // Несуществующее поле
-  "unl": "https://github.com/kos3434/test", // Опечатка: должно быть "url"
-  "manifest": "https://github.com/kos3434/test/module.json", // Некорректная ссылка (должна быть raw.githubusercontent.com)
-  "download": "https://github.com/kos3434/test/archive/main.xls", // Опечатка: должно быть .zip, а не .xls
+  "scripts": [ "project1/scripts/main.js" ], // Путь от корня репозитория!
+  "styles": [ "project1/styles/module.css" ], // Путь от корня!
+  "esmodules": [], // Корректное поле (если не используется)
+  "packs": [], // Корректное поле (если нет compendium)
+  "url": "https://github.com/kos3434/test",
+  "manifest": "https://raw.githubusercontent.com/kos3434/test/master/project1/module.json", // RAW-ссылка на файл в папке!
+  "download": "https://github.com/kos3434/test/archive/master.zip", // .zip, а не .xls
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9"
 }
