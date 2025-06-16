@@ -4,12 +4,14 @@
   "description": "Пример модуля с приветствием",
   "version": "1.0.0",
   "author": "kos3434",
-  "esmodules": [ "project1/scripts/main.js" ],
-  "styles": [ "project1/styles/module.css" ],
+  "esmodules": [ "scripts/main.js" ],
+  "styles": [ "styles/module.css" ],
   "packs": [],
   "url": "https://github.com/kos3434/test",
-  "manifest": "https://raw.githubusercontent.com/kos3434/test/master/project1/module.json",
+  "manifest": "https://raw.githubusercontent.com/kos3434/test/master/module.json",
   "download": "https://github.com/kos3434/test/archive/refs/heads/master.zip",
-  "minimumCoreVersion": "10",
-  "compatibleCoreVersion": "11"
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  }
 }
