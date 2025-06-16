@@ -1,39 +1,11 @@
 // Инициализация модуля
-Hooks.once("init", () => {
-    console.log("My Simple Module: Initialized!");
-});
+Hooks.on("ready", () => {
+    if (!game.user.isGM) return; // Только для GM
+    console.log("Модуль Hello World загружен!");
 
-// Добавление кнопки в панель управления сценой
-Hooks.on("getSceneControlButtons", (controls) => {
-    controls.push({
-        name: "myModule",
-        title: "My Module",
-        icon: "fas fa-smile",
-        layer: "myLayer",
-        tools: [
-            {
-                name: "showPopup",
-                title: "Show Popup",
-                icon: "fas fa-comment",
-                onClick: () => showPopup(),
-                button: true
-            }
-        ]
+    // Приветствие всем игрокам в чате
+    ChatMessage.create({
+        content: "<b>Привет!</b> Модуль <i>Hello World</i> успешно активирован!",
+        whisper: ChatMessage.getWhisperRecipients("GM") // Только ГМам
     });
 });
-
-// Показать всплывающее окно
-function showPopup() {
-    const html = renderTemplate("modules/my-simple-module/templates/popup.html");
-    new Dialog({
-        title: "Hello World!",
-        content: html,
-        buttons: {
-            ok: {
-                icon: '<i class="fas fa-check"></i>',
-                label: "OK",
-                callback: () => console.log("Popup closed")
-            }
-        }
-    }).render(true);
-}
